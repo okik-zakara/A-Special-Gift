@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Valentine Doors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,500;1,500&family=Jost:wght@400;500&family=Pinyon+Script&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="stage" id="stage" data-state="closed" aria-label="Valentine gift">
+  <div class="ambient" id="ambient" aria-hidden="true"></div>
+
+  <header class="head">
+    <p class="date">October 15 </p>
+    <h1 class="title">A little something for you</h1>
+  </header>
+
+  <div class="scene">
+    <div class="arch">
+      <div class="inside"></div>
+
+      <svg class="keystone" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <defs><linearGradient id="gViolet" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c9a6ff"/><stop offset="1" stop-color="#6d3bd1"/></linearGradient></defs>
+        <path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 2.9 4.5 6.6 4.5c2.1 0 3.6 1.2 5.4 3.3 1.8-2.1 3.3-3.3 5.4-3.3 3.7 0 5.7 3.9 4.2 7.3C19.5 16.4 12 21 12 21z" fill="url(#gViolet)" stroke="#e0b265" stroke-width="1"/>
+      </svg>
+
+      <button class="doors" id="doorsBtn" type="button" aria-label="Open the doors">
+        <span class="door left">
+          <svg class="emblem" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 2.9 4.5 6.6 4.5c2.1 0 3.6 1.2 5.4 3.3 1.8-2.1 3.3-3.3 5.4-3.3 3.7 0 5.7 3.9 4.2 7.3C19.5 16.4 12 21 12 21z" fill="rgba(166,108,255,0.4)" stroke="#e0b265" stroke-width="0.5" stroke-opacity="0.85"/></svg>
+          <span class="knob"></span>
+        </span>
+        <span class="door right">
+          <svg class="emblem" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 2.9 4.5 6.6 4.5c2.1 0 3.6 1.2 5.4 3.3 1.8-2.1 3.3-3.3 5.4-3.3 3.7 0 5.7 3.9 4.2 7.3C19.5 16.4 12 21 12 21z" fill="rgba(166,108,255,0.4)" stroke="#e0b265" stroke-width="0.5" stroke-opacity="0.85"/></svg>
+          <span class="knob"></span>
+        </span>
+      </button>
+
+      <button class="gift-wrap" id="giftBtn" type="button" aria-label="Open the gift" disabled>
+        <span class="gift">
+          <svg viewBox="0 0 240 240" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="gBox" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f0527a"/><stop offset="1" stop-color="#b01c47"/></linearGradient>
+              <linearGradient id="gLid" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff7595"/><stop offset="1" stop-color="#e23d68"/></linearGradient>
+              <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f7dc9f"/><stop offset="0.55" stop-color="#e0b265"/><stop offset="1" stop-color="#a97a2e"/></linearGradient>
+              <path id="hrt" d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 2.9 4.5 6.6 4.5c2.1 0 3.6 1.2 5.4 3.3 1.8-2.1 3.3-3.3 5.4-3.3 3.7 0 5.7 3.9 4.2 7.3C19.5 16.4 12 21 12 21z"/>
+            </defs>
+            <ellipse cx="120" cy="226" rx="84" ry="9" fill="#000" opacity="0.35"/>
+            <rect x="34" y="104" width="172" height="14" rx="3" fill="#5b0f2a"/>
+            <rect x="34" y="112" width="172" height="110" rx="10" fill="url(#gBox)"/>
+            <rect x="34" y="112" width="12" height="110" rx="6" fill="#fff" opacity="0.08"/>
+            <rect x="107" y="112" width="26" height="110" fill="url(#gGold)"/>
+            <g fill="#d9c2ff" opacity="0.95">
+              <use href="#hrt" transform="translate(52 138) scale(0.95)"/>
+              <use href="#hrt" transform="translate(68 176) scale(0.75)"/>
+              <use href="#hrt" transform="translate(158 140) scale(0.75)"/>
+              <use href="#hrt" transform="translate(170 180) scale(0.95)"/>
+            </g>
+            <g class="lid">
+              <rect x="24" y="82" width="192" height="36" rx="9" fill="url(#gLid)"/>
+              <rect x="24" y="108" width="192" height="10" rx="5" fill="#000" opacity="0.12"/>
+              <rect x="107" y="82" width="26" height="36" fill="url(#gGold)"/>
+              <path d="M116 90 L92 126 L108 122 L120 96Z" fill="url(#gGold)" stroke="#a97a2e" stroke-width="1.2"/>
+              <path d="M124 90 L148 126 L132 122 L120 96Z" fill="url(#gGold)" stroke="#a97a2e" stroke-width="1.2"/>
+              <path d="M120 82 C92 40 48 46 58 74 C64 92 104 90 120 82Z" fill="url(#gGold)" stroke="#a97a2e" stroke-width="1.5"/>
+              <path d="M120 82 C148 40 192 46 182 74 C176 92 136 90 120 82Z" fill="url(#gGold)" stroke="#a97a2e" stroke-width="1.5"/>
+              <path d="M112 78 C96 62 78 62 74 72" fill="none" stroke="#a97a2e" stroke-width="1.5" opacity="0.6"/>
+              <path d="M128 78 C144 62 162 62 166 72" fill="none" stroke="#a97a2e" stroke-width="1.5" opacity="0.6"/>
+              <ellipse cx="120" cy="82" rx="13" ry="11" fill="url(#gGold)" stroke="#a97a2e" stroke-width="1.5"/>
+              <use href="#hrt" fill="#8e5cf0" stroke="#e0b265" stroke-width="0.8" transform="translate(64 91)"/>
+              <use href="#hrt" fill="#8e5cf0" stroke="#e0b265" stroke-width="0.8" transform="translate(152 91)"/>
+            </g>
+          </svg>
+        </span>
+      </button>
+
+      <div class="burst" id="burst" aria-hidden="true"></div>
+    </div>
+    <div class="threshold"></div>
+  </div>
+
+  <p class="hint" id="hint" aria-live="polite">Tap the doors</p>
+
+  <div class="veil" aria-hidden="true"></div>
+
+  <section class="letter" id="letter" tabindex="-1" aria-label="Your Valentine note" inert aria-hidden="true">
+    <div class="read">
+      <svg class="seal" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 2.9 4.5 6.6 4.5c2.1 0 3.6 1.2 5.4 3.3 1.8-2.1 3.3-3.3 5.4-3.3 3.7 0 5.7 3.9 4.2 7.3C19.5 16.4 12 21 12 21z" fill="#7c4dff"/></svg>
+      <p class="letter-eyebrow">A little gift for you </p>
+      <h2 class="letter-to">To <span id="toOut">My Cute and Lovely, Sweet Girlfriend. </span>,</h2>
+      <p class="letter-body" id="msgOut"> I love you, I love you, I love you. My sweet sweet girl, I love you so so much. My dearest, my honey, my sweetheart, my one and only baby. I love you till the world ends. With you, every day is an adventure in love that I never want to end. Your love is my compass, it guides me back to you, no matter where I am. You make ordinary days feel like a celebration. Thank you for being you, for being there, for being the person i long for and for being my favorite person. I love you so much my sweet sweet girlfriend. Cayla Yap, I will hold you till my lasting breath. This little box holds a very big thank you. You are the biggest gift that i have come across. I love youuu. Mwahhhh.</p>
+      <div class="hearts-divider" aria-hidden="true"></div>
+      <p class="letter-from"><span class="with">With all my love</span><span class="sig" id="fromOut">Your one and only, forever boyfriend</span></p>
+      <div class="actions">
+        <button class="btn ghost" id="replayBtn" type="button">Replay</button>
+      </div>
+    </div>
+
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
